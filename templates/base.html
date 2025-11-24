@@ -8,18 +8,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="{% url 'home' %}">Inicio</a>  | <a href="{% url 'task_list' %}">Minhas tarefas</a>                                                 
+        <nav> <a href="{% url 'home' %}">Inicio</a>  | <a href="{% url 'task_list' %}">Minhas tarefas</a>  |  <a href="{% url 'task_list_concluido' %}">Tarefas Concluidas </a>    
+         | <a href="{% url 'teste' %}">Teste</a>                  
         </nav> 
+        
         <hr>
     </header>
     
     <main>
-        {% block content %}
-        
-        
+    {% block content %}
+            
 
-        {% endblock %}
+    {% endblock %}
     </main>
 </body>
 

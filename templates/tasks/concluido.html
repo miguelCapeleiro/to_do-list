@@ -1,118 +1,27 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 
-{% block title %}Minhas Tarefas{% endblock %}
+{% block title %}Tarefas Concluidas{% endblock %}
 
 {% block content %}
 <table class="table table-sm table-dark">
   <thead>
     <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Titulo</th>
-      <th scope="col">Prioridade</th>
+      <th scope="col">titulo</th>
       <th scope="col">Descrição</th>
+      <th scope="col">Concluidas</th>
+      
     </tr>
   </thead>
   <tbody>
     <tr>
     {% for task in tarefas %}
     <tr>
-
-    <td>{{task.id}}</td>
     <td>{{task.titulo}}</td>
-    <td>{{task.prioridade}}</td>
     <td>{{task.descricao}}</td>
+    <td>{{task.concluida}}</td>
     
     </tr>
     {% endfor %}
   </tbody>
 </table>
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
